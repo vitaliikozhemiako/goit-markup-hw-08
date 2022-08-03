@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+.list, .site-nav, .contacts, .portfolio__filter, .gallery, 
+.social, .subscribe__form, .adress__list, .feature__list, 
+.about__card, .team__list, .clients__list {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.link, .site-nav__link, .contacts__link, .gallery__link, 
+.address__map, .address__contact {
+	text-decoration: none;
+	color: inherit;
+}

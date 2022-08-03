@@ -1,0 +1,114 @@
+.button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    height: 50px;
+    padding: 10px 32px;
+    color: var(--primery-white-color);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.87;
+    align-items: center;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    border: 0;
+
+
+&:hover,
+&:focus {
+    background-color: var(--focus-button);
+}
+}
+
+.subscribe__button {
+    display: inline-flex;
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+    font-family: inherit;
+    padding-left: 29px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    align-items: center;
+    background-color: var(--accent-color);
+    color: var(--primery-white-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--animation);
+
+
+&:hover,
+&:focus {
+    background-color: var(--focus-button);
+}
+}
+
+.icon-send {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: var(--primery-white-color);
+}
+
+.button__modal {
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-color);
+    color: var(--primery-white-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-color: var(--accent-color);
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+
+&:focus,
+&:hover {
+    background-color: var(--focus-button);
+    outline: none;
+}
+}
+
+.portfolio__button {
+    border: none;
+    background-color: #F5F4FA;
+    color: var(--title-text-color);
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    height: 38px;
+    padding: 6px 22px ;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03pc;
+    border-radius: 4px;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: var(--animation);
+
+    &:hover,
+    &:focus {
+    background-color: var(--accent-color);
+    color: var(--primery-white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+}
+
+.active{
+    background-color: var(--accent-color);
+    color: var(--primery-white-color)
+}

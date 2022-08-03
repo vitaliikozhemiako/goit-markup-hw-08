@@ -1,0 +1,109 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+	font-style: normal;
+}
+
+.header__wrap, .hero__wrap, .feature__wrap, .about__wrap, .team__wrap, 
+.clients__wrap, .footer__wrap, .portfolio__wrap {
+   
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 480px) {
+    width: 480px;
+}
+}
+
+.contacts__link, .nav, .footer__wrap, .header__wrap {
+    display: flex;
+    align-items: center;
+}
+
+.feature, .portfolio, .team, .clients, .about {
+    padding-top: 94px;
+    padding-bottom: 94px;
+} 
+
+.feature__title, .about__title, .team__title, .clients__title, 
+.portfolio__title {
+    margin-bottom: 50px;
+    color: var(--title-text-color);
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+.currentlink {
+    color: var(--accent-color);
+}
+
+.icon {
+    fill: currentColor;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.social__icon {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    color: var(--social-icon-color);
+    border-radius: 50%;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--animation);
+
+
+&:hover,
+&:focus {
+    background-color: var(--accent-color);
+    color: var(--primery-white-color);
+}
+}
+
+.social__link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    color: var(--primery-white-color);
+    background-color: var(--footer-social-link);
+    border-radius: 50%;
+    transition-duration: 250ms;
+    transition-property: background-color;
+    transition-timing-function: var(--animation);
+
+
+&:hover,
+&:focus {
+    background-color: var(--accent-color);
+}
+}
