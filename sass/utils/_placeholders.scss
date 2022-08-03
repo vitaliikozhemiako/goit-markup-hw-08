@@ -24,15 +24,11 @@ address {
 
 .header__wrap, .hero__wrap, .feature__wrap, .about__wrap, .team__wrap, 
 .clients__wrap, .footer__wrap, .portfolio__wrap {
-   
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-
-    @media screen and (min-width: 480px) {
-    width: 480px;
-}
 }
 
 .contacts__link, .nav, .footer__wrap, .header__wrap {
