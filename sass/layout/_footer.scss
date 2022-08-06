@@ -6,7 +6,23 @@
 }
 
 .footer__wrap {
+    text-align: center;
     align-items: baseline;
+
+    @media screen and (min-width: 1200px) {
+    -webkit-box-pack: start;
+    justify-content: start;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    text-align: left;
+    }
+
+    @media screen and (min-width: 768px) {
+    display: flex;
+    -webkit-box-align: baseline;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 }
 
 .footer__text {
@@ -43,6 +59,11 @@ address {
 }
 }
 
+.adress__list {
+    @media screen and (max-width: 1199px) {
+        margin-bottom: calc(2*var(--items-between));
+    }
+}
 
 .footer-contain {
     display: flex;
@@ -50,7 +71,13 @@ address {
 }
 
 .join {
-    margin-left: 70px
+    @media screen and (min-width: 768px) {
+        margin-left: 70px;
+    }
+
+    @media screen and (max-width: 768px) {
+    margin-bottom: calc(2*var(--items-between));
+    }
 }
 
 .join__title {
@@ -65,20 +92,35 @@ address {
 /* Subscribe */
 
 .subscribe {
+    @media screen and (min-width: 1200px) {
     margin-left: 93px;
+}
 }
 
 .subscribe__form {
-    display: flex;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 .subscribe__mail {
-    width: 358px;
+    width: 100%;
     height: 50px;
+    font-size: 16px;
+    line-height: 1.25;
     background-color: inherit;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    padding: 16px;
+    padding: 16px 15px;
     color: var(--primery-white-color);
+
+    @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+}
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-right: 12px;
+    }
 }

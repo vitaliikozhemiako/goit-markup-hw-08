@@ -17,32 +17,58 @@
       <!-- Logo -->
       <a href="./index.html" class="logo"><span class="logo-web">Web</span>Studio</a>
       <!-- nav -->
+
+    <button type="button" class="menu-button" aria-expanded="true" aria-controls="menu-backdrop" data-menu-button>
+      <svg width="40" height="40" aria-label="переключатель меню">
+        <use class="icon-menu" href="./images/icon.svg#icon-menu"></use>
+      </svg>
+    </button>
+
+    <div class="menu-backdrop" data-menu> 
+    <div class="menu-backdrop__container">
+      <button type="button" class="menu-button menu-backdrop__button--cross" aria-expanded="true" aria-controls="menu-backdrop" data-menu-button-close>
+        <svg width="40" height="40" aria-label="переключатель меню">
+          <use class="icon-cross" href="./images/icon.svg#icon-cross"></use>
+        </svg>
+      </button>
       <ul class="site-nav">
         <li class="site-nav__item">
           <a href="./index.html" class="site-nav__link"> Студия </a>
         </li>
         <li class="site-nav__item">
-          <a href="./portfolio.html" class="site-nav__link currentlink">Портфолио</a>
+          <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a>
         </li>
         <li class="site-nav__item">
           <a href="#" class="site-nav__link">Контакты</a>
         </li>
       </ul>
-    </nav>
       <!-- contacts -->
         <ul class="contacts">
-          <li class="contacts__item icon-mail">
+          <li class="contacts__item">
             <a href="mailto:info@devstudio.com" class="contacts__link">
-              <svg class="icon icon-mail" width="16" height="12"><use href="./images/icon.svg#icon-envelope"></use></svg>
+              <svg class="icon-contacts" width="16" height="12"><use href="./images/icon.svg#icon-envelope"></use></svg>
             info@devstudio.com</a>
           </li>
-          <li class="contacts__item icon-phone">
-            <a href="tel:+380961111111" class="contacts__link">
-              <svg class="icon icon-phone" width="10" height="16"><use href="./images/icon.svg#icon-smartphone"></use></svg>
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link contacts__link--accent">
+              <svg class="icon-contacts" width="10" height="16"><use href="./images/icon.svg#icon-smartphone"></use></svg>
             +38 096 111 11 11</a>
           </li>
         </ul>
-  </div> 
+        <ul class="social-links">
+          <li class="social-links__item">
+          <a class="social-links__link" href="">Instagram</a></li>
+          <li class="social-links__item">
+          <a class="social-links__link" href="">Twitter</a></li>
+          <li class="social-links__item">
+          <a class="social-links__link" href="">Facebook</a></li>
+          <li class="social-links__item">
+          <a class="social-links__link" href="">Linkedin</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+      </nav>
   </header>
 
     <main>
@@ -60,6 +86,9 @@
         <li class="gallery__item">
           <a href="" class="gallery__link">
           <div class="gallery__img">
+            <picture>
+              
+            </picture>
           <img src="./images/technokriak.jpg" alt="Сайт Технокряк" width="370">
           <div class="gallery__overlay">
           <p class="gallery__descr">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -261,5 +290,6 @@
     </div>
   </div>
     </footer>
+    <script src="./js/menu.js"></script>
     </body>
   </html>

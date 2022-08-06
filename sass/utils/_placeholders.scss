@@ -13,7 +13,6 @@
 }
 
 img {
-	display: block;
 	max-width: 100%;
 	height: auto;
 }
@@ -24,21 +23,41 @@ address {
 
 .header__wrap, .hero__wrap, .feature__wrap, .about__wrap, .team__wrap, 
 .clients__wrap, .footer__wrap, .portfolio__wrap {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+
+    padding-left: calc(var(--items-between)/2);
+    padding-right: calc(var(--items-between)/2);
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
 
-.contacts__link, .nav, .footer__wrap, .header__wrap {
+.header__wrap, .nav, .contacts__link {
     display: flex;
     align-items: center;
+    -webkit-box-align: center;
 }
 
 .feature, .portfolio, .team, .clients, .about {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: calc(2*var(--items-between));
+    padding-bottom: calc(2*var(--items-between));
+
+    @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
+}
 } 
 
 .feature__title, .about__title, .team__title, .clients__title, 
@@ -48,10 +67,6 @@ address {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-}
-
-.currentlink {
-    color: var(--accent-color);
 }
 
 .icon {

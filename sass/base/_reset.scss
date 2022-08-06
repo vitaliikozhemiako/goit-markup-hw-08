@@ -17,14 +17,14 @@ p {
 
 .list, .site-nav, .contacts, .portfolio__filter, .gallery, 
 .social, .subscribe__form, .adress__list, .feature__list, 
-.about__card, .team__list, .clients__list {
+.about__card, .team__list, .clients__list, .social-links {
 	list-style: none;
 	padding-left: 0;
 	margin: 0;
 }
 
 .link, .site-nav__link, .contacts__link, .gallery__link, 
-.address__map, .address__contact {
+.address__map, .address__contact, .social-links__link {
 	text-decoration: none;
 	color: inherit;
 }

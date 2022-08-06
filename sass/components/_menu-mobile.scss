@@ -1,0 +1,112 @@
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+
+.menu-backdrop {
+    display: flex;
+    background-color: var(--primery-white-color );
+
+
+    &.is-open {
+        transform: translateX(0);
+    }
+
+    @media screen and (max-width: 767px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(100%);
+    transition: transform 250ms var(--cubic-bezier), -webkit-transform 250ms var(--cubic-bezier);
+    }
+
+    @media screen and (min-width: 768px) {
+    -webkit-box-flex: 2;
+    flex-grow: 2;
+    }
+
+    @media screen and (max-width: 1199px) {
+    z-index: 2;
+    }
+}
+
+.menu-backdrop .icon-cross {
+    display: none;
+}
+
+.menu-backdrop.is-open .icon-cross {
+    display: block;
+}
+
+.menu-backdrop__button--cross:hover, .menu-backdrop__button--cross:focus, .menu-backdrop__button--cross:active {
+    cursor: pointer;
+    fill: var(--accent-color);
+}
+
+
+.menu-backdrop__button--cross {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+
+.menu-backdrop__container {
+    display: flex;
+
+    @media screen and (max-width: 767px) {
+    position: relative;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding: 48px 40px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: .02em;
+    }
+
+    @media screen and (min-width: 768px){
+    flex-grow: 2;
+    align-items: center;
+}
+}
+
+.social-links {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+.social-links .social-links__link {
+        color: var(--accent-color);
+        font-weight: 500;
+        font-size: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 1.22;
+        letter-spacing: .02em;
+}
+
+.social-links .social-links__item:not(:last-of-type) .social-links__link {
+    border-right: 1px solid rgba(33,33,33,.2);
+}

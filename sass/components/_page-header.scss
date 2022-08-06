@@ -1,99 +1,176 @@
 header {
-    padding-top: 0px;
-    padding-bottom: 0px;
     border-bottom: 1px solid #ececec;
-    flex-wrap: nowrap;
-}
 
-.nav {
-    display: flex;
-    align-items: center;
-    height: 80px;
+    @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
 }
 
 .header__wrap {
-    display: flex;
-    align-items: center;
-    height: 80px;
+    display: block;
 }
+
+.nav {
+    
+    @media screen and (max-width: 768px) {
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    }
+}
+
 
 .site-nav {
-display: flex;
-margin-left: 93px;
+display: block;
+
+@media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 88px;
 }
 
-.site-nav__item {
+@media screen and (min-width: 1200px) {
+    margin-left: 93px;
+}    
+}
+
+.site-nav__item:not(:last-child) {
+@media screen and (max-width: 767px){
+    margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
     margin-right: 50px;
-
-
-&:last-child {
-    margin-right: 0;
 }
 }
 
 .site-nav__link,
 .contacts__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    color: var(--title-text-color);
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.15;
-    letter-spacing: 0.02em;
-    transition-duration: 250ms;
-    transition-property: color;
-    transition-timing-function: var(--animation);
+    text-decoration: none;
+    color: var(--primary-text-color);
+
+    &:hover, 
+    &:focus {
+    color: #2196F3
+}
 }
 
 .site-nav__link {
     display: block;
-    position: relative;
+    line-height: 1.15;
+    color: var(--title-text-color);
 
-
-&:hover, 
-&:focus {
-    color: var(--accent-color);
+    @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    }
 }
 
-&.currentlink::after {
-    opacity: 1;
-    border-radius: 4px;
+.site-nav__link--current {
+    color: var(--accent-color);
+
+
+&::after {
+opacity: 1;
+border-radius: 4px;
 }
 
 &::after {
-    content: "";
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: var(--accent-color);
-    opacity: 0;
-    transition: opacity 250ms var(--animation);
-    border-radius: 2px;
+content: "";
+position: absolute;
+left: 0px;
+bottom: -1px;
+display: block;
+width: 100%;
+height: 4px;
+background-color: var(--accent-color);
+opacity: 0;
+transition: opacity 250ms var(--animation);
+border-radius: 2px;
 }
 }
 
 .contacts {
     display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+    font-size: 34px;
+    }
+
+    @media screen and (max-width: 767px) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    flex-direction: column-reverse;
+    margin-top: auto;
+    margin-bottom: 58px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.17;
+    letter-spacing: .02em;
+    }
+
+    @media screen and (min-width: 768px) {
     margin-left: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    }
+}
+
+.contacts__link {
+    transition-property: color fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);
 }
 
 .contacts__item {
-    margin-left: 50px;
+    font-size: 12px;
+    line-height: 1.17;
 }
 
-
-.contacts__link {
-    color: inherit;
-    align-items: center;
-    display: inline-flex;
-    gap: 10px;
-
-
-&:hover, 
-&:focus {
-    color: #2196F3
+.contacts__item:nth-child(1) {
+    @media screen and (max-width: 767px) {
+    font-size: 26px;
 }
+}
+
+.contacts__item:nth-child(2){
+    @media screen and (max-width: 767px){
+        font-size: 34px;
+        margin-bottom: 38px;
+    }
+    }
+    
+    .contacts__link--accent {
+    @media screen and (max-width: 767px) {
+        color: var(--accent-color);
+    }
+    }
+
+.contacts__item:not(:last-child) {
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1200px){
+    font-size: 14px;
+    line-height: 1.14;
+    margin-right: 50px;
+}
+}
+
+.icon-contacts {
+    display: none;
+    fill: currentColor;
+    margin-right: 10px;
+
+    @media screen and (min-width: 767px){
+    display: block;
+    }
 }
