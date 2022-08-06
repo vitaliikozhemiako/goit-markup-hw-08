@@ -75,7 +75,7 @@
       <!-- hero -->
       <section class="hero">
         <div class="hero__wrap">
-          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+          <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
         <button class="button" data-modal-open type="button" aria-label="Заказать услугу">Заказать услугу</button>
       </div>
       </section>
@@ -168,7 +168,37 @@
           <ul class="team__list">
             <li class="team__item">
               <div class="team__thumb">
-              <img src="./images/team-1.jpg" alt="продакт менеджер" width="270" />
+                <picture>
+                  <source srcset="
+											./images/descktop-igor.webp    1x,
+											./images/descktop-igor@2x.webp 2x
+										" media="(min-width: 1200px)" type="image/webp">
+                    <source srcset="
+											./images/descktop-igor.jpg    1x,
+											./images/descktop-igor@2x.jpg 2x
+										" media="(min-width: 1200px)" type="image/jpeg">
+                    <source srcset="
+											./images/tablet-igor.webp    1x,
+											./images/tablet-igor@2x.webp 2x
+										" media="(min-width: 768px) and (max-width: 1199px)" type="image/webp">
+                    <source srcset="
+                    ./images/tablet-igor.jpg 1x,
+                     ./images/tablet-igor@2x.jpg 2x,
+                    " media="(min-width: 768px) and (max-width: 1199px)" type="image/jpeg">
+                    <source srcset="
+											./images/mobile-igor.webp    1x,
+											./images/mobile-igor@2x.webp 2x
+										" media="(max-width: 767px)" type="image/webp">
+                    <source srcset="
+                    ./images/mobile-igor.jpg 1x, 
+                    ./images/mobile-igor@2x.jpg 2x
+                    " media="(max-width: 767px)" type="image/jpeg">
+                    <img srcset="
+											./images/mobile-igor.jpg     450w,
+											./images/mobile-igor@2x.jpg  900w
+										" sizes="50vw" src="./images/mobile-igor.jpg" alt="Игорь Демьяненко">
+                </picture>
+              
               </div>
               <div class="team__descr">
               <h3 class="team__name">Игорь Демьяненко</h3>
@@ -208,7 +238,36 @@
             </li>
             <li class="team__item">
               <div class="team__thumb">
-              <img src="./images/team-2.jpg" alt="фронт разработчик" width="270" />
+                <picture>
+                  <source srcset="
+											./images/descktop-olga.webp    1x,
+											./images/descktop-olga@2x.webp 2x
+										" media="(min-width: 1200px)" type="image/webp">
+                    <source srcset="
+											./images/descktop-olga.jpg    1x,
+											./images/descktop-olga@2x.jpg 2x
+										" media="(min-width: 1200px)" type="image/jpeg">
+                    <source srcset="
+											./images/tablet-olga.webp    1x,
+											./images/tablet-olga@2x.webp 2x
+										" media="(min-width: 768px) and (max-width: 1199px)" type="image/webp">
+                    <source srcset="
+                    ./images/tablet-olga.jpg 1x,
+                     ./images/tablet-olga@2x.jpg 2x,
+                    " media="(min-width: 768px) and (max-width: 1199px)" type="image/jpeg">
+                    <source srcset="
+											./images/mobile-olga.webp    1x,
+											./images/mobile-olga@2x.webp 2x
+										" media="(max-width: 767px)" type="image/webp">
+                    <source srcset="
+                    ./images/mobile-olga.jpg 1x, 
+                    ./images/mobile-olga@2x.jpg 2x
+                    " media="(max-width: 767px)" type="image/jpeg">
+                    <img srcset="
+											./images/mobile-olga.jpg     450w,
+											./images/mobile-olga@2x.jpg  900w
+										" sizes="50vw" src="./images/mobile-olga.jpg" alt="Игорь Демьяненко">
+                </picture>
               </div>
               <div class="team__descr">
               <h3 class="team__name">Ольга Репина</h3>
@@ -247,7 +306,36 @@
             </li>
             <li class="team__item">
               <div class="team__thumb">
-              <img src="./images/team-3.jpg" alt="маркетолог" width="270" />
+                <picture>
+                  <source srcset="
+											./images/descktop-nikolai.webp    1x,
+											./images/descktop-nikolai@2x.webp 2x
+										" media="(min-width: 1200px)" type="image/webp">
+                    <source srcset="
+											./images/descktop-nikolai.jpg    1x,
+											./images/descktop-nikolai@2x.jpg 2x
+										" media="(min-width: 1200px)" type="image/jpeg">
+                    <source srcset="
+											./images/tablet-nikolai.webp    1x,
+											./images/tablet-nikolai@2x.webp 2x
+										" media="(min-width: 768px) and (max-width: 1199px)" type="image/webp">
+                    <source srcset="
+                    ./images/tablet-nikolai.jpg 1x,
+                     ./images/tablet-nikolai@2x.jpg 2x,
+                    " media="(min-width: 768px) and (max-width: 1199px)" type="image/jpeg">
+                    <source srcset="
+											./images/mobile-nikolai.webp    1x,
+											./images/mobile-nikolai@2x.webp 2x
+										" media="(max-width: 767px)" type="image/webp">
+                    <source srcset="
+                    ./images/mobile-nikolai.jpg 1x, 
+                    ./images/mobile-nikolai@2x.jpg 2x
+                    " media="(max-width: 767px)" type="image/jpeg">
+                    <img srcset="
+											./images/mobile-nikolai.jpg     450w,
+											./images/mobile-nikolai@2x.jpg  900w
+										" sizes="50vw" src="./images/mobile-nikolai.jpg" alt="Игорь Демьяненко">
+                </picture>
               </div>
               <div class="team__descr">
               <h3 class="team__name">Николай Тарасов</h3>
@@ -286,7 +374,36 @@
             </li>
             <li class="team__item">
               <div class="team__thumb">
-              <img src="./images/team-4.jpg" alt="дизайнер" width="270" />
+                <picture>
+                  <source srcset="
+											./images/descktop-michail.webp    1x,
+											./images/descktop-michail@2x.webp 2x
+										" media="(min-width: 1200px)" type="image/webp">
+                    <source srcset="
+											./images/descktop-michail.jpg    1x,
+											./images/descktop-michail@2x.jpg 2x
+										" media="(min-width: 1200px)" type="image/jpeg">
+                    <source srcset="
+											./images/tablet-michail.webp    1x,
+											./images/tablet-michail@2x.webp 2x
+										" media="(min-width: 768px) and (max-width: 1199px)" type="image/webp">
+                    <source srcset="
+                    ./images/tablet-michail.jpg 1x,
+                     ./images/tablet-michail@2x.jpg 2x,
+                    " media="(min-width: 768px) and (max-width: 1199px)" type="image/jpeg">
+                    <source srcset="
+											./images/mobile-michail.webp    1x,
+											./images/mobile-michail@2x.webp 2x
+										" media="(max-width: 767px)" type="image/webp">
+                    <source srcset="
+                    ./images/mobile-michail.jpg 1x, 
+                    ./images/mobile-michail@2x.jpg 2x
+                    " media="(max-width: 767px)" type="image/jpeg">
+                    <img srcset="
+											./images/mobile-michail.jpg     450w,
+											./images/mobile-michail@2x.jpg  900w
+										" sizes="50vw" src="./images/mobile-michail.jpg" alt="Игорь Демьяненко">
+                </picture>
               </div>
               <div class="team__descr">
               <h3 class="team__name">Михаил Ермаков</h3>
