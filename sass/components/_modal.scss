@@ -77,8 +77,8 @@
 }
 
 .form {
-    padding: 40px;
     display: flex;
+    padding: 40px;
     flex-direction: column;
     align-items: center;
     text-align: left;
@@ -175,6 +175,7 @@
 
 .checkbox {
     display: flex;
+    position: relative;
     align-items: center;
     cursor: pointer;
     justify-content: center;
